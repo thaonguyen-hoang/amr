@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AMR Evaluation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="quest">How fluent is this utterance?</p>
+    <p id="utterance">Loading…</p>
+
+    <input type="range" min="1" max="5" value="3" class="slider" id="fluencySlider">
+    <span class="slider-value" id="fluencyValue">3</span>
+
+    <div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <button id="prevItem">← Prev item</button>
+      </div>
+      <!-- <div style="text-align:center" id="progress">0 / 0</div> -->
+      <div>
+        <!-- <button id="toAdequacy">Go to Adequacy →</button> -->
+        <button id="nextItem">Next item →</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Progress slide shown below the main container -->
+  <div class="progress-slide" aria-hidden="false">
+    <div class="progress-inner">
+      <div class="progress-info">
+        <span id="progress" class="progress-text">0 / 0</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="progressBarFill" class="progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

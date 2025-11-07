@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AMR Evaluation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="quest">How well does this utterance represent the meaning in the AMR?<br>
+    Please give a rating with the slider based on your best guess about what the sentence would mean, regardless of how fluent it is.
+    In addition, use the next question to indicate specific types of problems, if applicable.
+    </p>
+  <pre id="amrPre">
+  Loading AMR...
+  </pre>
+  <p id="utterance">Loading…</p>
+    <input type="range" min="1" max="5" value="3" class="slider" id="adequacySlider">
+    <span class="slider-value" id="adequacyValue">3</span>
+
+    <p id="error">Does this utterance have any of the following problems? Choose all that apply.</p>
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="p1"> Cannot understand meaning</label>
+      <label><input type="checkbox" id="p2"> Information from the AMR is missing in the utterance</label>
+      <label><input type="checkbox" id="p3"> Information in the utterance is not present in the AMR</label>
+    </div>
+
+    <div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <!-- <button id="toFluency">← Back to Fluency</button> -->
+        <button id="prevItem">← Prev item</button>
+      </div>
+      <!-- <div style="text-align:center" id="progress">0 / 0</div> -->
+      <div>
+        <button id="nextItem">Next item →</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
