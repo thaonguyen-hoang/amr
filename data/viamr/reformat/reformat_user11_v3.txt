@@ -1,0 +1,2568 @@
+#::snt cái hành tinh thật là bé .
+(b / bé
+    :domain(h / hành_tinh
+        :classifier(c / cái))
+    :degree(t / thật
+        :compound(l / là)))
+
+#::snt đức vua có thể trị vì trên cái gì ở đây ?
+(p / possible-01
+    :agent(đ / đức
+        :compound(v / vua))
+    :theme(t / trị_vì
+        :theme(a / amr-unknown
+            :prep(t1 / trên)
+            :classifier(c1 / cái)))
+    :location(đ1 / đây
+        :prep(ở / ở)))
+
+#::snt - tâu bệ hạ , em nói , cúi xin bệ hạ cho tôi được hỏi ...
+(n / nói
+    :agent(e / em)
+    :topic(a / and
+        :op1(t / tâu
+            :goal(b / bệ_hạ))
+        :op2(c / cúi
+            :compound(x / xin)
+            :topic(c1 / cho
+                :beneficiary(h / hỏi
+                    :modality(đ / được)
+                    :beneficiary-arg0 e)
+                :agent b)
+            :goal b
+            :agent e)))
+
+#::snt - ta ra lệnh cho ngươi hỏi , vua vội vàng nói .
+(n1 / nói
+    :topic(r / ra_lệnh
+        :topic(h / hỏi
+            :patient(n / ngươi))
+        :agent v)
+    :agent(v / vua)
+    :manner(v1 / vội_vàng))
+
+#::snt - tâu bệ hạ , ngài trị vì trên cái gì ?
+(t / tâu
+    :patient(b / bệ_hạ)
+    :topic(t1 / trị_vì
+        :agent b
+        :theme(a / amr-unknown
+            :prep(t2 / trên)
+            :classifier(c / cái))))
+
+#::snt - trên tất cả .
+(t1 / tất_cả
+    :prep(t / trên))
+
+#::snt Nhà vua đáp , hết sức giản dị .
+(đ / đáp
+    :agent(n / nhà_vua)
+    :manner(g / giản_dị
+        :degree(h / hết_sức)))
+
+#::snt - trên tất cả ?
+(t1 / tất_cả
+    :prep(t / trên)
+    :mode interrogative)
+
+#::snt đức vua phác một cử chỉ dứt khoát chỉ cái hành tinh của mình , các hành tinh khác và các ngôi sao .
+(p / phác
+    :agent(đ / đức
+        :compound(v / vua))
+    :theme(c / cử_chỉ
+        :quant 1)
+    :manner(d / dứt_khoát)
+    :agent-of(c1 / chỉ
+        :goal(a / and
+            :op1(h / hành_tinh
+                :classifier(c2 / cái)
+                :poss đ)
+            :op2(h1 / hành_tinh
+                :mod(k / khác))
+            :op3(s / sao
+                :classifier(n / ngôi)))))
+
+#::snt - trên tất cả những cái đó ? ông hoàng nhỏ hỏi .
+(h / hỏi
+    :topic(c / cái
+        :prep(t / trên)
+        :mod(t1 / tất_cả)
+        :mod(đ / đó)
+        :mode interrogative)
+    :agent(ô / ông_hoàng
+        :mod(n1 / nhỏ)))
+
+#::snt - trên tất cả những cái đó ...
+(c / cái
+    :prep(t / trên)
+    :mod(t1 / tất_cả)
+    :mod(đ / đó))
+
+#::snt đức vua trả lời .
+(t / trả_lời
+    :agent(đ / đức
+        :compound(v / vua)))
+
+#::snt bởi vì đó không phải là một vị vua chuyên chế mà còn là một vị vua toàn năng .
+(c1 / cause-01
+    :topic(a / and
+        :op1(p / phải
+            :domain(đ / đó)
+            :result(v / vị
+                :compound(v1 / vua)
+                :mod(c / chuyên_chế)
+                :quant 1)
+            :polarity -)
+        :op2(v2 / vị
+            :compound(v3 / vua)
+            :mod(t / toàn_năng)
+            :domain đ
+            :quant 1)))
+
+#::snt - các ngôi sao có tuân lệnh bệ hạ không ?
+(t / tuân
+    :agent(s / sao
+        :classifier(n / ngôi))
+    :theme(l / lệnh
+        :source(b / bệ_hạ))
+    :mode interrogative)
+
+#::snt - chắc chắn rồi , vua trả lời em .
+(t / trả_lời
+    :topic(c / chắc_chắn
+        :modality(r / rồi))
+    :agent(v / vua)
+    :goal(e / em))
+
+#::snt chúng lập tức tuân lệnh .
+(t / tuân
+    :agent(c / chúng)
+    :manner(l / lập_tức)
+    :theme(l1 / lệnh))
+
+#::snt trẫm không dung thứ sự trái lời .
+(d / dung_thứ
+    :agent(t / trẫm)
+    :topic(s / sự
+        :compound(t1 / trái
+            :mod(l / lời)))
+    :polarity -)
+
+#::snt một quyền lực như thế làm cho ông hoàng nhỏ thích mê .
+(l / làm
+    :agent(q / quyền_lực
+        :compared-to(t / thế)
+        :degree(e / equal))
+    :result(t1 / thích
+        :pivot(ô / ông_hoàng
+            :mod(n1 / nhỏ))
+        :compound(m1 / mê)))
+
+#::snt nếu em mà có quyền lực ấy , em có thể mặc sức mà ngắm , không phải là bốn mươi bốn , mà đến bảy mươi hai , đến một trăm , đến cả hai trăm cảnh mặt trời lặn trong một ngày , mà chẳng phải xê dịch ghế ngồi .
+(p1 / possible-01
+    :condition(c / có
+        :pivot(e / em)
+        :theme(q / quyền_lực
+            :mod(ấ / ấy)))
+    :agent(n1 / ngắm
+        :degree(m1 / mặc_sức)
+        :theme(c3 / cảnh
+            :mod(l1 / lặn
+                :agent-of(m5 / mặt_trời)
+                :frequency(h4 / have-frequency-91
+                    :range(t2 / temporal-quantity
+                        :quant 1
+                            :unit(n2 / ngày))
+                    :quant(a / and
+                        :op2 72
+                        :op4 200
+                        :op3 100
+                        :op1 40
+                            :polarity -))))
+        :manner(x / xê_dịch
+            :modality(p11 / phải)
+            :patient(g / ghế
+                :mod(n3 / ngồi))
+            :agent e
+            :polarity -)
+        :agent-of e))
+
+#::snt rồi em cảm thấy hơi buồn vì chợt nghĩ đến cái tinh cầu nhỏ bị bỏ rơi của mình , em đánh bạo xin nhà vua một ân huệ :
+(đ1 / đánh_bạo
+    :cause(c / cảm
+        :pivot(e / em)
+        :compound(t / thấy)
+        :manner(b / buồn
+            :degree(h / hơi))
+        :cause(n / nghĩ
+            :degree(c1 / chợt)
+            :goal(t1 / tinh_cầu
+                :classifier(c2 / cái)
+                :mod(n1 / nhỏ)
+                :mod(b2 / bỏ_rơi
+                    :modality(b1 / bị)
+                    :agent e)
+                :poss(m / mình))
+            :pivot e))
+    :pivot(e1 / em)
+    :purpose(x / xin
+        :goal(n2 / nhà_vua)
+        :theme(â / ân_huệ
+            :quant 1)
+        :agent e))
+
+#::snt - tôi muốn được xem cảnh mặt trời lặn ...
+(m / muốn
+    :pivot(t / tôi)
+    :topic(x / xem
+        :modality(đ / được)
+        :theme(c / cảnh
+            :mod(l / lặn
+                :agent(m1 / mặt_trời)))
+        :agent t))
+
+#::snt xin bệ hạ hãy làm tôi vui lòng , hãy ra lệnh cho mặt trời lặn ...
+(a / and
+    :op1(x / xin
+        :goal(b / bệ_hạ)
+        :topic(l / làm
+            :beneficiary(v / vui_lòng
+                :beneficiary-arg0(t / tôi))
+            :agent b
+            :mode imperative)
+        :op2(r / ra_lệnh
+            :theme(l1 / lặn
+                :agent(m / mặt_trời))
+            :agent b
+            :mode imperative)
+        :agent t))
+
+#::snt - nếu ta ra lệnh cho một võ tướng bay từ đoá hoa này sang đoá hoa kia như một con bướm , hay lệnh cho ông ta viết một vở bi kịch , hay biến thành chim biển , và nếu vị võ tướng ấy không tuân lệnh , thì lỗi ấy ở ông ta hay ở ta ?
+(a / and
+    :op2(l2 / lỗi
+        :condition(t4 / tuân
+            :agent(v5 / võ_tướng
+                :classifier(v4 / vị)
+                :mod(ấ / ấy))
+            :polarity -
+            :theme(l1 / lệnh))
+        :mod(ấ1 / ấy)
+        :cause(o1 / or
+            :op1(ô1 / ông
+                :mod(t6 / ta))
+            :op2(t7 / ta)))
+    :op1(o / or
+        :condition(r / ra_lệnh
+            :agent(t / ta)
+            :topic(b / bay
+                :agent(v / võ_tướng
+                    :quant 1)
+                :initialLocation(h / hoa
+                    :classifier(đ / đoá)
+                    :mod(n1 / này))
+                :finalLocation(h1 / hoa
+                    :classifier(đ1 / đoá)
+                    :mod(k / kia))
+                :compared-to(b1 / bướm
+                    :quant 1
+                        :classifier(c1 / con))))
+        :op1(l / lệnh
+            :goal(ô / ông
+                :mod(t2 / ta))
+            :topic(v1 / viết
+                :theme(v2 / vở
+                    :quant 1
+                        :mod(b2 / bi_kịch))
+                :agent ô))
+        :op2(b3 / biến
+            :compound(t3 / thành)
+            :result-arg1(c3 / chim
+                :compound(b4 / biển)))))
+
+#::snt - ở bệ hạ , ông hoàng nhỏ cả quyết .
+(c / cả_quyết
+    :topic(ở / ở
+        :source(b / bệ_hạ))
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ)))
+
+#::snt - đúng .
+(đ / đúng)
+
+#::snt phải cho mỗi người làm việc người đó có thể làm , đức vua nhắc lại .
+(n2 / nhắc
+    :agent(đ1 / đức
+        :compound(v / vua))
+    :compound(l2 / lại)
+    :topic(o / obligate-01
+        :topic(c / cho
+            :topic(l / làm_việc
+                :agent(n / người
+                    :mod(m / mỗi))
+                :theme(l1 / làm
+                    :modality(c1 / có_thể)
+                    :agent n)))))
+
+#::snt quyền lực trước hết phải dựa trên lẽ phải .
+(o / obligate-01
+    :topic(d / dựa
+        :theme(q / quyền_lực)
+        :degree(t / trước_hết)
+        :source(l / lẽ_phải
+            :prep(t1 / trên))))
+
+#::snt nếu nhà ngươi ra lệnh cho thần dân của mình nhảy xuống bể , họ sẽ làm cách mạng .
+(l / làm
+    :condition(r / ra_lệnh
+        :agent(n1 / nhà_ngươi)
+        :topic(n2 / nhảy
+            :agent(t / thần_dân
+                :poss(m / mình))
+            :direction(x / xuống)
+            :location(b / bể)))
+    :tense(s / sẽ)
+    :result(c2 / cách_mạng)
+    :agent t)
+
+#::snt ta có quyền buộc tuân lệnh ta vì mọi lệnh ta đều hợp lý .
+(c / có
+    :pivot(t / ta)
+    :theme(q / quyền)
+    :manner(b / buộc
+        :topic(t1 / tuân
+            :theme(l / lệnh
+                :poss t)))
+    :cause(h / hợp_lý
+        :domain(l1 / lệnh
+            :mod(m / mọi)
+            :poss t)
+        :degree(đ / đều)))
+
+#::snt - thế cảnh mặt trời lặn của tôi thì sao ?
+(c / cảnh
+    :mod(l / lặn
+        :pivot(m / mặt_trời))
+    :poss(t1 / tôi)
+    :manner(a / amr-unknown))
+
+#::snt ông hoàng nhỏ vốn đã đặt ra câu hỏi thì không bao giờ quên , hỏi lại .
+(đ1 / đặt
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :tense(đ / đã)
+    :compound(r / ra)
+    :theme(c / câu
+        :compound(h / hỏi))
+    :result(a / and
+        :op1(q / quên
+            :time(b / bao_giờ)
+            :polarity -
+            :pivot ô)
+        :op2(h1 / hỏi
+            :compound(l / lại))))
+
+#::snt - cảnh mặt trời lặn của ngươi , ngươi sẽ có .
+(c2 / có
+    :theme(c / cảnh
+        :mod(l / lặn
+            :pivot(m / mặt_trời))
+        :poss(n / ngươi))
+    :tense(s / sẽ)
+    :pivot n)
+
+#::snt ta muốn thế .
+(m / muốn
+    :pivot(t / ta)
+    :theme(t1 / thế))
+
+#::snt nhưng trong khoa học cai trị của ta , ta phải chờ đến lúc đủ mọi điều kiện .
+(c3 / contrast-01
+    :ARG2(o / obligate-01
+        :setting(k / khoa_học
+            :mod(c / cai_trị)
+            :poss(t1 / ta))
+        :manner(c2 / chờ
+            :time(l / lúc
+                :mod(đ1 / đủ
+                    :theme(đ2 / điều_kiện
+                        :mod(m / mọi))))
+            :pivot t1)
+        :pivot t1))
+
+#::snt - đến bao giờ thì đủ ? ông hoàng nhỏ hỏi .
+(h / hỏi
+    :result(đ1 / đủ)
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :time(a / amr-unknown))
+
+#::snt - ừm ! ừm ! nhà vua nói , thoạt tiên tra một cuốn lịch to tướng , ừm ! ừm !
+(m1 / multi-sentence
+    :snt1(ừ / ừm
+        :mode expressive)
+    :snt2(ừ1 / ừm
+        :mode expressive)
+    :snt3(a / and
+        :op1(n1 / nói
+            :agent(n / nhà_vua)
+            :topic(t1 / tra
+                :time(t / thoạt_tiên)
+                :theme(l / lịch
+                    :mod(t2 / to_tướng)
+                    :quant 1
+                        :classifier(c / cuốn))))
+        :op2(ừ2 / ừm
+            :mode expressive)
+        :op3(ừ3 / ừm
+            :mode expressive)))
+
+#::snt vào lúc ...
+(v / vào
+    :time(l / lúc))
+
+#::snt khoảng ... khoảng ...
+(k / khoảng)
+
+#::snt vào lúc chiều nay , khoảng bảy giờ bốn mươi phút ! nhà ngươi sẽ thấy được lệnh ta được tuân thủ .
+(t / thấy
+    :time(k / khoảng
+        :op1(d / date-entity
+            :dayperiod(c / chiều
+                :mod(n / nay))
+            :time 19h40))
+    :pivot(n1 / nhà_ngươi)
+    :tense(s / sẽ)
+    :result(l1 / lệnh
+        :poss(t1 / ta)
+        :agent-of(t2 / tuân_thủ
+            :modality(đ1 / được))))
+
+#::snt ông hoàng nhỏ ngáp .
+(n1 / ngáp
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ)))
+
+#::snt em tiếc cho cảnh mặt trời lặn hụt của em .
+(t / tiếc
+    :pivot(e / em)
+    :theme(c1 / cảnh
+        :mod(l / lặn
+            :agent(m / mặt_trời)
+            :manner(h / hụt))
+        :poss(e1 / em)))
+
+#::snt và rồi em cũng hơi thấy chán :
+(a / and
+    :op2(t / thấy
+        :pivot(e / em)
+        :modality(c / cũng)
+        :degree(h / hơi)
+        :theme(c1 / chán)))
+
+#::snt - tôi chẳng có gì làm ở đây nữa , em nói với nhà vua , tôi sẽ đi .
+(n1 / nói
+    :agent(e / em)
+    :goal(n2 / nhà_vua)
+    :topic(đ1 / đi
+        :reason(c1 / có
+            :theme(g / gì)
+            :purpose(l / làm
+                :location(đ / đây)
+                :agent e)
+            :polarity -
+            :pivot e)
+        :tense(s / sẽ)
+        :agent e))
+
+#::snt - ngươi chớ đi , nhà vua vừa mới kiêu hãnh xiết bao vì có được một thần dân , đáp lời ông hoàng nhỏ .
+(đ2 / đáp
+    :topic(đ / đi
+        :agent ô
+        :mode imperative
+        :polarity -)
+    :agent(n1 / nhà_vua)
+    :setting(k / kiêu_hãnh
+        :degree(x / xiết_bao)
+        :reason(c1 / có
+            :result(t / thần_dân
+                :quant 1)
+            :pivot n1)
+        :time(b / before)
+        :domain n1)
+    :compound(l / lời)
+    :goal(ô / ông_hoàng
+        :mod(n2 / nhỏ)))
+
+#::snt chớ đi , ta phong ngươi làm thượng thư !
+(a / and
+    :op1(đ / đi
+        :mode imperative
+        :agent n
+        :polarity -)
+    :op2(p / phong
+        :agent(t / ta)
+        :patient(l / làm
+            :patient-of(n / ngươi)
+            :theme(t1 / thượng_thư))))
+
+#::snt - thượng thư bộ gì ?
+(t / thượng_thư
+    :source(b / bộ
+        :mod(a / amr-unknown)))
+
+#::snt - bộ ... bộ tư pháp !
+(b1 / bộ
+    :mod(t / tư_pháp))
+
+#::snt - nhưng có ai để xét xử đâu ạ !
+(c2 / contrast-01
+    :ARG2(c / có
+        :patient(a / ai)
+        :purpose(x / xét_xử)
+        :polarity -))
+
+#::snt - chưa thể biết , vua nói với ông hoàng nhỏ .
+(n / nói
+    :topic(b / biết
+        :polarity -)
+    :agent(v / vua)
+    :goal(ô / ông_hoàng
+        :mod(n1 / nhỏ)))
+
+#::snt ta chưa đi tuần tra khắp vương quốc của ta .
+(đ / đi
+    :agent(t / ta)
+    :compound(t1 / tuần_tra)
+    :location(v / vương_quốc
+        :degree(k / khắp)
+        :poss t)
+    :polarity -)
+
+#::snt ta già quá rồi , không có đủ chỗ để một cỗ xa giá cho ta , mà đi bộ thì ta nhọc lắm .
+(a / and
+    :op1(g / già
+        :pivot(t / ta)
+        :degree(q / quá))
+    :op2(c / có
+        :degree(đ / đủ)
+        :location(c1 / chỗ)
+        :purpose(đ1 / để)
+        :theme(x / xa_giá
+            :quant 1
+                :classifier(c2 / cỗ))
+        :beneficiary t
+        :polarity -)
+    :op3(n / nhọc
+        :condition(đ2 / đi
+            :compound(b / bộ)
+            :agent t)
+        :degree(l / lắm)
+        :pivot t))
+
+#::snt - ồ ! nhưng tôi đã nhìn thấy , ông hoàng nhỏ nghiêng mình nhìn sang phía bên kia của hành tinh .
+(m1 / multi-sentence
+    :snt1(ồ / ồ
+        :mode expressive)
+    :snt2(c2 / contrast-01
+        :ARG2(a / and
+            :op1(n1 / nhìn
+                :tense(đ / đã)
+                :compound(t1 / thấy)
+                :agent ô)
+            :op2(n3 / nghiêng_mình
+                :agent(ô / ông_hoàng
+                    :mod(n2 / nhỏ))
+                :purpose(n4 / nhìn
+                    :compound(s / sang)
+                    :location(p / phía
+                        :mod(b / bên
+                            :mod(k / kia))
+                        :part-of(h / hành_tinh))
+                    :agent ô)))))
+
+#::snt bên kia cũng chẳng có ai đâu ạ ...
+(c2 / có
+    :location(b / bên
+        :mod(k / kia))
+    :modality(c / cũng)
+    :theme(a / ai)
+    :polarity -)
+
+#::snt - thế thì ngươi hãy tự xét xử lấy mình đi , đức vua đáp lại em .
+(đ2 / đáp
+    :topic(x / xét_xử
+        :manner(t1 / tự)
+        :agent e
+        :patient e
+        :mode imperative)
+    :agent(đ1 / đức
+        :mod(v / vua))
+    :compound(l1 / lại)
+    :goal(e / em))
+
+#::snt đó là điều khó nhất .
+(đ1 / điều
+    :domain(đ / đó)
+    :mod(k / khó
+        :degree(n / nhất)))
+
+#::snt xét mình khó hơn xét người nhiều .
+(x / xét
+    :patient(m / mình)
+    :manner(k / khó
+        :degree(h / hơn
+            :degree(n1 / nhiều)))
+    :compared-to(x1 / xét
+        :patient(n / người)))
+
+#::snt - tôi , ông hoàng nhỏ đáp , tôi có thể tự xét mình bất cứ ở đâu .
+(đ / đáp
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :topic(p / possible-01
+        :agent(x / xét
+            :manner(t2 / tự)
+            :location(đ1 / đâu
+                :mod(b / bất_cứ)
+                :prep(ở / ở))
+            :patient ô
+            :agent-of ô)))
+
+#::snt tôi không nhất thiết phải ở đây .
+(o / obligate-01
+    :pivot(t / tôi)
+    :degree(n / nhất_thiết)
+    :manner(ở / ở
+        :location(đ / đây)
+        :pivot t)
+    :polarity -)
+
+#::snt - hừm ! hừm ! vua nói , hình như trên hành tinh của ta , đâu đó có một con chuột .
+(m1 / multi-sentence
+    :snt1(h / hừm
+        :mode expressive)
+    :snt2(h1 / hừm
+        :mode expressive)
+    :snt3(n / nói
+        :agent(v / vua)
+        :topic(c1 / có
+            :modality(h2 / hình_như)
+            :location(đ / đâu_đó
+                :location(h3 / hành_tinh
+                    :prep(t / trên)
+                    :poss v))
+            :theme(c3 / chuột
+                :quant 1
+                    :classifier(c2 / con)))))
+
+#::snt đêm ta nghe nó kêu .
+(n / nghe
+    :pivot(t / ta)
+    :theme(k / kêu
+        :agent(n1 / nó))
+    :time(d / date-entity
+        :dayperiod(đ / đêm)))
+
+#::snt nhà ngươi có thể xét xử con chuột già ấy .
+(p / possible-01
+    :agent(x / xét_xử
+        :agent-of(n / nhà_ngươi)
+        :patient(c2 / chuột
+            :classifier(c1 / con)
+            :mod(g / già)
+            :mod(ấ / ấy))))
+
+#::snt thỉnh thoảng ngươi ghép nó vào tội tử hình .
+(g / ghép
+    :agent(n / ngươi)
+    :patient(n1 / nó)
+    :setting(t1 / tội
+        :prep(v / vào)
+        :mod(t2 / tử_hình))
+    :frequency(h / have-frequency-91
+        :unit(t / thỉnh_thoảng)))
+
+#::snt như thế , cuộc đời của nó sẽ tuỳ ở luật pháp của nhà ngươi .
+(t1 / tuỳ
+    :pivot(c / cuộc_đời
+        :poss(n1 / nó))
+    :tense(s / sẽ)
+    :setting(l / luật_pháp
+        :prep(ở / ở)
+        :poss(n2 / nhà_ngươi)))
+
+#::snt nhưng mỗi lần buộc tội xong , thì ngươi lại nên ân xá để dành dụm chuột .
+(c1 / contrast-01
+    :ARG2(r / recommend-01
+        :result(b / buộc_tội
+            :frequency(h / have-frequency-91
+                :quant(m / mỗi)
+                :unit(l / lần))
+            :agent n)
+        :agent(â / ân_xá
+            :agent-of(n1 / ngươi)
+            :purpose(d / dành_dụm
+                :theme(c / chuột)))))
+
+#::snt chỉ có mỗi một con ấy thôi .
+(c1 / có
+    :degree(c / chỉ)
+    :theme(c2 / con
+        :mod(ấ / ấy)
+        :quant 1)
+    :modality(t / thôi))
+
+#::snt - tôi , ông hoàng nhỏ đáp , tôi không thích buộc tội tử hình , và tôi chắc rằng tôi sắp sửa ra đi .
+(đ / đáp
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :topic(a / and
+        :op1(t2 / thích
+            :pivot(t1 / tôi)
+            :topic(b / buộc_tội
+                :result(t3 / tử_hình)
+                :agent t1)
+            :polarity -)
+        :op2(l / likely-01
+            :topic(r1 / ra
+                :compound(đ1 / đi)
+                :agent t1
+                :time(a2 / after))
+            :pivot t1)))
+
+#::snt - không , vua nói .
+(n / nói
+    :topic(k / không)
+    :agent(v / vua))
+
+#::snt nhưng ông hoàng nhỏ , đã chuẩn bị xong , không muốn làm phiền lòng vị vua già :
+(c1 / contrast-01
+    :ARG2(m / muốn
+        :agent-of(ô / ông_hoàng
+            :mod(n1 / nhỏ)
+            :agent-of(c / chuẩn_bị
+                :tense(đ / đã)
+                :manner(x / xong)))
+        :topic(l / làm
+            :patient(p / phiền_lòng
+                :patient-of(v / vị
+                    :compound(v1 / vua)
+                    :mod(g / già)))
+            :agent ô)
+        :polarity -))
+
+#::snt - nếu bệ hạ muốn được tuân theo một cách đúng đắn , thì phải cho tôi một cái lệnh hợp lý .
+(o / obligate-01
+    :topic(c / cho
+        :condition(m / muốn
+            :pivot(b / bệ_hạ)
+            :modality(đ / được)
+            :patient(t / tuân
+                :compound(t1 / theo)
+                :manner(m1 / một_cách
+                    :mod(đ1 / đúng_đắn))
+                :patient-of t3))
+        :patient(t3 / tôi)
+        :theme(l / lệnh
+            :mod(h / hợp_lý)
+            :quant 1
+                :classifier(c1 / cái)))
+    :agent b)
+
+#::snt ví dụ như phải ra lệnh cho tôi ra đi tức khắc .
+(e / example
+    :topic(o / obligate-01
+        :topic(r / ra_lệnh
+            :patient(t / tôi)
+            :purpose(r1 / ra
+                :compound(đ / đi)
+                :manner(t1 / tức_khắc)
+                :patient t))))
+
+#::snt hình như mọi điều kiện đều thuận lợi ...
+(t / thuận_lợi
+    :modality(h / hình_như)
+    :domain(đ / điều_kiện
+        :mod(m / mọi))
+    :degree(đ1 / đều))
+
+#::snt nhà vua chẳng biết trả lời sao .
+(b / biết
+    :pivot(n / nhà_vua)
+    :topic(t / trả_lời
+        :manner(s / sao))
+    :polarity -)
+
+#::snt thoạt đầu ông hoàng nhỏ hơi do dự , rồi thở dài , em bước đi .
+(a / and
+    :op1(d / do_dự
+        :time(t / thoạt
+            :compound(đ / đầu))
+        :pivot(ô / ông_hoàng
+            :mod(n / nhỏ))
+        :degree(h / hơi))
+    :op2(a2 / and
+        :time(r / rồi)
+        :op1(t1 / thở_dài
+            :agent ô)
+        :op2(b / bước
+            :compound(đ1 / đi)
+            :agent ô)))
+
+#::snt - ta phong cho ngươi làm đại sứ , nhà vua vội vàng kêu lên .
+(k / kêu
+    :topic(p / phong
+        :beneficiary(l / làm
+            :beneficiary-arg0(n / ngươi)
+            :theme(đ / đại_sứ))
+        :agent n1)
+    :agent(n1 / nhà_vua)
+    :manner(v / vội_vàng)
+    :compound(l1 / lên))
+
+#::snt trông ngài có vẻ uy nghi lẫm liệt .
+(t / trông
+    :mod(c / có
+        :pivot(n / ngài)
+        :theme(v / vẻ
+            :mod(u / uy_nghi)
+            :mod(l / lẫm_liệt))))
+
+#::snt những người lớn thật rất kỳ quặc , cậu hoàng tử thầm nhủ với chính mình trong suốt cuộc hành trình .
+(n2 / nhủ
+    :topic(k / kỳ_quặc
+        :domain(n1 / người_lớn)
+        :degree(r / rất))
+    :agent(h / hoàng_tử
+        :classifier(c / cậu))
+    :manner(t1 / thầm)
+    :setting(c2 / cuộc
+        :prep(t2 / trong)
+        :time(s / suốt)
+        :mod(h1 / hành_trình))
+    :goal h
+        :modality(c1 / chính))
+
+#::snt trên tinh cầu thứ hai cư trú một gã khoác lác .
+(c / cư_trú
+    :location(t1 / tinh_cầu
+        :prep(t / trên)
+        :ord(o / ordinal-entity
+            :value 2))
+    :domain(g / gã
+        :mod(k / khoác_lác)
+        :quant 1))
+
+#::snt - á ! à ! kìa một gã ngưỡng mộ đến thăm ta ! gã khoác lác kêu lên khi nhìn thấy ông hoàng nhỏ từ xa .
+(m / multi-sentence
+    :snt1(á / á
+        :mode expressive)
+    :snt2(à / à
+        :mode expressive)
+    :snt3(k2 / kêu
+        :topic(đ / đến
+            :mode expressive
+            :agent(n / ngưỡng_mộ
+                :domain-of ô
+                :goal g1)
+            :purpose(t / thăm
+                :agent ô
+                :goal gg1))
+        :agent(g1 / gã
+            :mod(k1 / khoác_lác))
+        :compound(l / lên)
+        :time(n1 / nhìn
+            :compound(t2 / thấy)
+            :goal(ô / ông_hoàng
+                :mod(n2 / nhỏ))
+            :direction(t3 / từ
+                :op1(x / xa))
+            :agent g1)))
+
+#::snt bởi vì , đối với kẻ khoác lác , những người còn lại đều là kẻ ngưỡng mộ mình .
+(c1 / cause-01
+    :topic(n2 / ngưỡng_mộ
+        :source(k / kẻ
+            :mod(k1 / khoác_lác))
+        :domain(c / còn
+            :pivot-of(n1 / người)
+            :compound(l / lại))
+        :degree(đ1 / đều)
+        :pivot-of(k2 / kẻ)
+        :goal k))
+
+#::snt - chào anh , ông hoàng nhỏ nói .
+(n1 / nói
+    :topic(c / chào
+        :goal(a / anh))
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ)))
+
+#::snt anh có cái mũ ngộ quá .
+(c / có
+    :pivot(a / anh)
+    :theme(n / ngộ
+        :domain-of(m / mũ
+            :classifier(c1 / cái))
+        :degree(q / quá)))
+
+#::snt - cái đó là để mà chào đấy , gã khoác lác trả lời .
+(t / trả_lời
+    :topic(c / cái
+        :mod(đ / đó)
+        :purpose(c1 / chào)
+        :modality(đ2 / đấy))
+    :agent(g / gã
+        :mod(k / khoác_lác)))
+
+#::snt để chào khi người ta hoan hô tôi .
+(h2 / have-purpose-91
+    :topic(c / chào
+        :time(h / hoan_hô
+            :agent(n / người_ta)
+            :goal(t / tôi))
+        :agent t))
+
+#::snt không may là chẳng ai qua đây bao giờ cả .
+(q / qua
+    :modality(m / may
+        :polarity -)
+    :agent(a / ai
+        :polarity -)
+    :path(đ / đây)
+    :time(b / bao_giờ)
+    :degree(c1 / cả))
+
+#::snt - thế à ? ông hoàng nhỏ nói , không hiểu gì cả .
+(n1 / nói
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :topic(a / and
+        :op1(t / thế
+            :mode interrogative)
+        :op2(h / hiểu
+            :topic(g / gì
+                :mod(c / cả))
+            :pivot ô)))
+
+#::snt - hãy vỗ tay này vào tay kia đi , gã khoác lác liền khuyên .
+(k2 / khuyên
+    :manner(v / vỗ_tay
+        :mod(n / này)
+        :direction(v1 / vào
+            :patient(t / tay
+                :mod(k / kia)))
+        :modality(đ / đi)
+        :mode imperative)
+    :agent(g / gã
+        :mod(k1 / khoác_lác)))
+
+#::snt ông hoàng nhỏ vỗ tay này vào tay kia .
+(v / vỗ_tay
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :mod(n1 / này)
+    :direction(v1 / vào
+        :patient(t / tay
+            :mod(k / kia))))
+
+#::snt gã khoác lác ngả mũ chào một cách khiêm tốn .
+(n / ngả
+    :agent(g / gã
+        :mod(k / khoác_lác))
+    :theme(m / mũ)
+    :purpose(c / chào
+        :manner(k1 / khiêm_tốn)
+        :agent g))
+
+#::snt - coi bộ vui hơn đi thăm nhà vua , ông hoàng nhỏ nói thầm .
+(n2 / nói_thầm
+    :topic(v / vui
+        :modality(c / coi
+            :compound(b / bộ))
+        :degree(h / hơn)
+        :compared-to(đ / đi
+            :compound(t / thăm)
+            :goal(n / nhà_vua)))
+    :agent(ô / ông_hoàng
+        :mod(n1 / nhỏ)))
+
+#::snt và em tiếp tục vỗ tay này vào tay kia .
+(a / and
+    :op2(t / tiếp_tục
+        :agent(e / em)
+        :topic(v1 / vỗ_tay
+            :mod(n / này)
+            :direction(v2 / vào
+                :patient(t1 / tay
+                    :mod(k / kia))))))
+
+#::snt gã khoác lác lại ngả mũ chào .
+(n / ngả
+    :agent(g / gã
+        :mod(k / khoác_lác))
+    :manner(l / lại)
+    :patient(m / mũ)
+    :purpose(c / chào
+        :agent g))
+
+#::snt sau năm phút tập dượt , ông hoàng nhỏ thấy chán vì sự đơn điệu của cái trò chơi ấy :
+(t1 / thấy
+    :time(s / sau
+        :op1(t2 / tập_dượt
+            :duration(t4 / temporal-quantity
+                :quant 5
+                    :unit(p / phút))))
+    :pivot(ô / ông_hoàng
+        :mod(n1 / nhỏ))
+    :manner(c / chán)
+    :cause(s1 / sự
+        :compound(đ / đơn_điệu)
+        :source(t3 / trò_chơi
+            :classifier(c2 / cái)
+            :mod(ấ / ấy))))
+
+#::snt - thế , muốn cho chiếc mũ nó rơi tuột xuống , em hỏi , thì phải làm sao ?
+(h / hỏi
+    :topic(m / muốn
+        :patient(r / rơi
+            :patient-of(m1 / mũ
+                :classifier(c1 / chiếc))
+            :compound(t1 / tuột)
+            :direction(x / xuống))
+        :topic(o / obligate-01
+            :topic-of(l / làm
+                :manner(a / amr-unknown))))
+    :agent(e / em))
+
+#::snt nhưng gã khoác lác không nghe thấy .
+(c / contrast-01
+    :ARG2(n1 / nghe
+        :agent(g / gã
+            :mod(k / khoác_lác))
+        :compound(t / thấy)
+        :polarity -))
+
+#::snt những người khoác lác chẳng nghe thấy gì ngoài những câu ca ngợi .
+(n2 / nghe
+    :agent(n1 / người
+        :mod(k / khoác_lác))
+    :compound(t / thấy)
+    :theme(g / gì
+        :concession(n3 / ngoài
+            :mod(c1 / câu
+                :mod(c2 / ca_ngợi))))
+    :polarity -)
+
+#::snt - chú em khâm phục ta nhiều thật chứ ?
+(k / khâm_phục
+    :pivot(c / chú
+        :compound(e / em))
+    :goal(t / ta)
+    :degree(n / nhiều)
+    :modality(t1 / thật)
+    :mode interrogative)
+
+#::snt gã hỏi ông hoàng nhỏ .
+(h / hỏi
+    :agent(g / gã)
+    :goal(ô / ông_hoàng
+        :mod(n / nhỏ)))
+
+#::snt - khâm phục nghĩa là thế nào ?
+(n / nghĩa_là
+    :domain(k / khâm_phục)
+    :manner(a / amr-unknown))
+
+#::snt - khâm phục nghĩa là thừa nhận ta là người đẹp nhất , ăn mặc sang nhất , giàu có nhất và thông minh nhất trên hành tinh .
+(n / nghĩa_là
+    :theme(k / khâm_phục)
+    :topic(t / thừa_nhận
+        :topic(n1 / người
+            :domain(t1 / ta)
+            :location(h / hành_tinh
+                :prep(t3 / trên))
+            :mod(a / and
+                :op1(đ / đẹp
+                    :degree(n2 / nhất))
+                :op2(ă / ăn_mặc
+                    :manner(s / sang
+                        :degree(n3 / nhất)))
+                :op3(g / giàu_có
+                    :degree(n4 / nhất))
+                :op4(t2 / thông_minh
+                    :degree(n5 / nhất))))))
+
+#::snt - nhưng anh chỉ có một mình trên hành tinh của anh chứ mấy ?
+(c2 / contrast-01
+    :ARG2(c1 / có
+        :pivot(a / anh)
+        :quant(m / một_mình)
+        :location(h / hành_tinh
+            :prep(t / trên)
+            :poss(a1 / anh))
+        :modality(c3 / chứ
+            :quant(m1 / mấy))))
+
+#::snt - hãy chiều ta đi mà .
+(c / chiều
+    :beneficiary(t / ta)
+    :modality(đ / đi
+        :compound(m / mà))
+    :mode imperative)
+
+#::snt dẫu sao cứ hãy cứ khâm phục ta !
+(k / khâm_phục
+    :modality(c1 / cứ)
+    :goal(t / ta)
+    :mode imperative)
+
+#::snt - tôi khâm phục anh , ông hoàng nhỏ nói , hơi nhún vai , nhưng sao điều đó lại làm anh quan tâm đến thế nhỉ ?
+(n1 / nói
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :manner(n2 / nhún_vai
+        :degree(h / hơi)
+        :agent ô)
+    :topic(c / contrast-01
+        :ARG1(k / khâm_phục
+            :goal(a / anh)
+            :pivot ô)
+        :ARG2(l1 / làm
+            :theme(đ / điều
+                :mod(đ1 / đó))
+            :result(q / quan_tâm
+                :degree(t1 / thế)
+                :modality(n4 / nhỉ)
+                :pivot a)
+            :manner(a2 / amr-unknown))))
+
+#::snt và ông hoàng nhỏ ra đi .
+(a / and
+    :op1(r / ra
+        :agent(ô / ông_hoàng
+            :mod(n / nhỏ))
+        :compound(đ / đi)))
+
+#::snt những người lớn chắc chắn là kỳ quặc rồi , em chỉ nói đơn giản có thế trong suốt cuộc hành trình .
+(n2 / nói
+    :topic(k / kỳ_quặc
+        :domain(n1 / người_lớn)
+        :modality(c / chắc_chắn))
+    :agent(e / em)
+    :manner(đ / đơn_giản
+        :compared-to(t / thế)
+        :degree(e2 / equal))
+    :setting(c3 / cuộc
+        :prep(t1 / trong)
+        :time(s / suốt)
+        :mod(h / hành_trình)))
+
+#::snt tinh cầu tiếp theo có một bợm nhậu cư trú .
+(c / có
+    :location(t / tinh_cầu
+        :mod(t1 / tiếp_theo))
+    :pivot(c1 / cư_trú
+        :pivot-of(b / bợm
+            :compound(n / nhậu)
+            :quant 1)))
+
+#::snt cuộc viếng thăm lần này hết sức ngắn nhưng lại làm cho ông hoàng nhỏ miên man buồn :
+(c2 / contrast-01
+    :ARG1(n1 / ngắn
+        :domain(c / cuộc
+            :compound(v / viếng_thăm)
+            :mod(l / lần
+                :mod(n / này)))
+        :degree(h / hết_sức))
+    :ARG2(l2 / làm
+        :modality(l1 / lại)
+        :pivot(b / buồn
+            :pivot-of(ô / ông_hoàng
+                :mod(n3 / nhỏ))
+            :manner(m / miên_man))
+        :agent n1))
+
+#::snt - anh làm gì đấy ? ông hoàng nhỏ nói với tay bợm nhậu đang ngồi im lặng trước một bộ sưu tập chai không và một bộ sưu tập chai đầy .
+(n1 / nói
+    :topic(l / làm
+        :modality(đ / đấy)
+        :agent t
+        :theme(a3 / amr-unknown))
+    :agent(ô / ông
+        :compound(h / hoàng)
+        :mod(n / nhỏ))
+    :goal(t / tay
+        :mod(b / bợm
+            :compound(n2 / nhậu)
+            :pivot-of(n3 / ngồi
+                :tense(đ1 / đang)
+                :manner(i / im_lặng)
+                :location(t1 / trước
+                    :op1(a2 / and
+                        :op1(b1 / bộ
+                            :compound(s / sưu_tập)
+                            :mod(c / chai
+                                :mod(k / không))
+                            :quant 1)
+                        :op2(b2 / bộ
+                            :compound(s1 / sưu_tập)
+                            :mod(c1 / chai
+                                :mod(đ2 / đầy))
+                            :quant 1)))))))
+
+#::snt - ta nhậu , bợm nhậu trả lời , vẻ thiểu não .
+(t1 / trả_lời
+    :topic(n / nhậu
+        :agent b)
+    :agent(b / bợm
+        :compound(n1 / nhậu))
+    :manner(v / vẻ
+        :mod(t2 / thiểu_não)))
+
+#::snt - tại sao anh nhậu ? ông hoàng nhỏ hỏi anh ta .
+(h / hỏi
+    :topic(n / nhậu
+        :agent a1
+        :reason(a2 / amr-unknown))
+    :agent(ô / ông_hoàng
+        :mod(n1 / nhỏ))
+    :goal(a1 / anh
+        :mod(t1 / ta)))
+
+#::snt - để quên , bợm nhậu trả lời .
+(t / trả_lời
+    :purpose(q / quên)
+    :agent(b / bợm
+        :compound(n / nhậu)))
+
+#::snt - để quên cái gì ? ông hoàng nhỏ hỏi trong lúc bắt đầu cảm thấy ái ngại cho hắn .
+(h / hỏi
+    :purpose(q / quên
+        :theme(a / amr-unknown)
+        :pivot h1)
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :setting(b / bắt_đầu
+        :topic(c1 / cảm
+            :time(l / lúc)
+            :compound(t1 / thấy)
+            :manner(á / ái_ngại
+                :goal(h1 / hắn)))
+        :pivot ô))
+
+#::snt - để quên nỗi xấu hổ của ta , bợm nhậu cúi đầu thú nhận .
+(t1 / thú_nhận
+    :purpose(q / quên
+        :theme(n / nỗi
+            :compound(x / xấu_hổ)
+            :source(t / ta))
+        :pivot b)
+    :agent(b / bợm
+        :compound(n1 / nhậu))
+    :manner(c1 / cúi
+        :theme(đ1 / đầu
+            :part-of b)))
+
+#::snt - xấu hổ vì cái gì ? ông hoàng nhỏ hỏi , đã muốn giúp đỡ hắn .
+(h / hỏi
+    :topic(x / xấu_hổ
+        :pivot h1
+        :reason(a / amr-unknown))
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :setting(m / muốn
+        :tense(đ / đã)
+        :topic(g1 / giúp_đỡ
+            :beneficiary(h1 / hắn)
+            :agent ô)
+        :pivot ô))
+
+#::snt - xấu hổ vì cái nhậu ! bợm nhậu kết thúc và nhất quyết lặng im
+(m / multi-sentence
+    :snt1(x / xấu_hổ
+        :cause(c / cái
+            :compound(n / nhậu))
+        :pivot b)
+    :snt2(a / and
+        :op1(k / kết_thúc
+            :agent(b / bợm
+                :compound(n1 / nhậu)))
+        :op2(l / lặng_im
+            :modality(n2 / nhất_quyết)
+            :domain b)))
+
+#::snt và ông hoàng thì ra đi , sửng sốt .
+(a2 / and
+    :op1(r / ra
+        :agent(ô / ông_hoàng)
+        :compound(đ / đi))
+    :op2(s / sửng_sốt
+        :pivot ô))
+
+#::snt những người lớn nhất định là rất kỳ quặc , cậu tự nói thầm trong suốt cuộc hành trình .
+(n3 / nói_thầm
+    :topic(k / kỳ_quặc
+        :domain(n1 / người_lớn)
+        :modality(n2 / nhất_định)
+        :degree(r / rất))
+    :agent(c / cậu)
+    :manner(t / tự)
+    :setting(c1 / cuộc
+        :prep(t1 / trong)
+        :time(s / suốt)
+        :mod(h / hành_trình)))
+
+#::snt tinh cầu thứ tư là của một nhà doanh nghiệp .
+(t / tinh_cầu
+    :poss(n / nhà
+        :compound(d / doanh_nghiệp)
+        :quant 1)
+    :ord(o / ordinal-entity
+        :value 4))
+
+#::snt ông này bận rộn đến nỗi không ngẩng được đầu lên khi ông hoàng nhỏ tới .
+(b / bận_rộn
+    :pivot(ô / ông
+        :mod(n / này))
+    :degree(đ / đến_nỗi
+        :manner(n1 / ngẩng
+            :patient(đ2 / đầu
+                :part-of ô)
+            :direction(l / lên)
+            :time(t / tới
+                :agent(ô1 / ông_hoàng
+                    :mod(n2 / nhỏ)))
+            :agent ô
+            :polarity -)))
+
+#::snt - chào ông , em nói với hắn .
+(n / nói
+    :topic(c / chào
+        :goal(ô / ông)
+        :agent e)
+    :agent(e / em)
+    :goal(h / hắn))
+
+#::snt điếu thuốc lá của ông tắt rồi .
+(t1 / tắt
+    :theme(đ / điếu
+        :mod(t / thuốc_lá)
+        :poss(ô / ông))
+    :modality(r / rồi))
+
+#::snt - ba với hai là năm .
+(e / equal-01
+    :ARG1(s / sum-of
+        :op1 3
+        :op2 2)
+    :ARG2 5)
+
+#::snt năm với bảy là mười hai
+(e / equal-01
+    :ARG2 12
+    :ARG1(s / sum-of
+        :op1 5
+        :op2 7))
+
+#::snt Mười hai với ba là mười lăm .
+(e / equal-01
+    :ARG1(s / sum-of
+        :op2 3
+        :op1 12)
+    :ARG2 15)
+
+#::snt chào chú .
+(c / chào
+    :goal(c1 / chú))
+
+#::snt Mười lăm với bảy là hăm hai .
+(e / equal-01
+    :ARG2 22
+    :ARG1(s / sum-of
+        :op2 7
+        :op1 15))
+
+#::snt hăm hai với sáu là hăm tám .
+(e / equal-01
+    :ARG2 28
+    :ARG1(s / sum-of
+        :op2 6
+        :op1 22))
+
+#::snt chẳng có thời giờ mà châm lại .
+(c1 / có
+    :polarity -
+    :theme(t / thời_giờ
+        :purpose(c2 / châm
+            :manner(l / lại))))
+
+#::snt xong ! tất cả là năm trăm linh một triệu sáu trăm năm mươi hai nghìn bảy trăm ba mươi mốt ..
+(m / multi-sentence
+    :snt1(x / xong
+        :mode expressive)
+    :snt2(wz2 / 501622731
+        :domain(t / tất_cả)))
+
+#::snt - năm trăm triệu cái gì vậy ?
+(a / amr-unknown
+    :quant 500000000)
+
+#::snt - hử ? thế chú vẫn còn đấy à ? .
+(m / multi-sentence
+    :snt1(h / hử
+        :mode interrogative)
+    :snt2(c1 / còn
+        :pivot(c / chú)
+        :manner(v / vẫn)
+        :modality(đ / đấy)
+        :modality(à / à)
+        :mode interrogative))
+
+#::snt năm trăm linh một triệu ...
+(wz1 / 501000000)
+
+#::snt ta cũng chẳng biết là cái gì nữa .
+(b / biết
+    :pivot(t / ta)
+    :modality(c / cũng)
+    :polarity -
+    :theme(g / gì
+        :classifier(c2 / cái))
+    :modality(n / nữa))
+
+#::snt ta có quá nhiều công việc ! ta rất đứng đắn , ta , ta không thích những trò nhảm nhí ! hai với năm là bảy ...
+(m / multi-sentence
+    :snt1(c / có
+        :pivot(t / ta)
+        :theme(c1 / công_việc
+            :quant(n / nhiều
+                :mod(q / quá))))
+    :snt2(đ / đứng_đắn
+        :degree(r / rất)
+        :domain t)
+    :snt3(t4 / thích
+        :theme(t5 / trò
+            :mod(n2 / nhảm_nhí))
+        :polarity -
+        :domain t)
+    :snt4(e / equal-01
+        :ARG1(s / sum-of
+            :op1 2
+            :op2 5)
+        :ARG2 7))
+
+#::snt - năm trăm linh một triệu cái gì ?
+(a / amr-unknown
+    :quant 501000000)
+
+#::snt ông hoàng nhỏ lặp lại , suốt đời em , không bao giờ bỏ ra một câu hỏi một khi đã nêu nó ra .
+(l / lặp
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :compound(l1 / lại)
+    :topic(b1 / bỏ
+        :time(đ / đời
+            :degree(s / suốt)
+            :source(e / em))
+        :time(b / bao_giờ)
+        :compound(r / ra)
+        :theme(c / câu
+            :compound(h / hỏi)
+            :quant 1)
+        :condition(n1 / nêu
+            :modality(m1 / một_khi)
+            :manner(r1 / ra)
+            :agent ô
+            :theme c)
+        :agent ô
+        :polarity -))
+
+#::snt nhà doanh nghiệp ngẩng đầu lên :
+(n1 / ngẩng
+    :agent(n / nhà
+        :compound(d / doanh_nghiệp))
+    :patient(đ / đầu
+        :part-of n)
+    :direction(l / lên))
+
+#::snt - năm mươi bốn năm ta ở trên cái hành tinh này , ta chỉ bị quấy rầy có ba lần .
+(q / quấy_rầy
+    :time(ở / ở
+        :pivot(t / ta)
+        :location(h / hành_tinh
+            :prep(t1 / trên)
+            :classifier(c / cái)
+            :mod(n2 / này))
+        :degree(c1 / chỉ)
+        :duration(t2 / temporal-quantity
+            :unit(n1 / năm)
+            :quant 54))
+    :modality(b / bị)
+    :frequency(h2 / have-frequency-91
+        :unit(l / lần)
+        :quant 3)
+    :patient t)
+
+#::snt lần đầu cách đây hai mươi hai năm do một con bọ hung chỉ có trời biết từ đâu rơi xuống .
+(l / lần
+    :time(c / cách
+        :location(đ1 / đây)
+        :quant(t3 / temporal-quantity
+            :unit(n / năm)
+            :quant 22))
+    :cause(r / rơi
+        :patient(b / bọ_hung
+            :quant 1
+                :classifier(c1 / con))
+        :initialLocation(đ2 / đâu
+            :topic(b1 / biết
+                :degree(c2 / chỉ)
+                :pivot(t / trời))
+            :prep(t1 / từ))
+        :direction(x / xuống))
+    :ord(o / ordinal-entity
+        :value 1))
+
+#::snt nó gây nên một tiếng động khủng khiếp và làm cho ta cộng sai bốn chỗ trong một bài tính cộng .
+(a / and
+    :op1(g / gây
+        :agent(n / nó)
+        :compound(n1 / nên)
+        :result(t / tiếng_động
+            :mod(k / khủng_khiếp)
+            :quant 1))
+    :op2(l / làm
+        :topic(c1 / cộng
+            :agent(t1 / ta)
+            :degree(s / sai)
+            :theme(c2 / chỗ
+                :quant 4)
+            :source(b1 / bài_tính
+                :prep(t2 / trong)
+                :mod(c3 / cộng)
+                :quant 1))
+        :agent n))
+
+#::snt lần thứ hai , là cách đây mười một năm , do một cơn cảm cúm .
+(l / lần
+    :time(c / cách
+        :location(đ / đây)
+        :quant(t2 / temporal-quantity
+            :unit(n / năm)
+            :quant 11))
+    :cause(c1 / cơn
+        :mod(c2 / cảm
+            :compound(c3 / cúm))
+        :quant 1)
+    :ord(o / ordinal-entity
+        :value 2))
+
+#::snt ta không có tập thể dục .
+(t1 / tập
+    :agent(t / ta)
+    :modality(c / có)
+    :theme(t2 / thể_dục)
+    :polarity -)
+
+#::snt ta không có thì giờ chơi bời .
+(c / có
+    :pivot(t / ta)
+    :theme(t1 / thì_giờ
+        :purpose(c1 / chơi_bời
+            :agent t))
+    :polarity -)
+
+#::snt ta , ta là một người đứng đắn !
+(n / người
+    :domain(t / ta)
+    :mod(đ / đứng_đắn))
+
+#::snt lần thứ ba ... là lần này !
+(l2 / lần
+    :mod(n / này)
+    :domain(o / ordinal-entity
+        :value 3))
+
+#::snt khi ta đang tính tới năm trăm linh một triệu ...
+(t1 / tính
+    :agent(t / ta)
+    :tense(đ / đang)
+    :quant 501000000)
+
+#::snt nhà doanh nghiệp ngẩng đầu lên :
+(n1 / ngẩng
+    :agent(n / nhà
+        :compound(d / doanh_nghiệp))
+    :patient(đ / đầu
+        :part-of n)
+    :direction(l / lên))
+
+#::snt - triệu cái gì ?
+(a / amr-unknown
+    :quant(t / triệu))
+
+#::snt nhà doanh nghiệp biết không hy vọng gì được yên thân :
+(b / biết
+    :pivot(n / nhà
+        :compound(d / doanh_nghiệp))
+    :topic(h / hy_vọng
+        :modality(g / gì)
+        :result(đ / được
+            :manner(y / yên_thân)
+            :domain n)
+        :polarity -))
+
+#::snt - triệu những vật nho nhỏ đôi khi nhìn thấy trên trời ấy .
+(v / vật
+    :quant(t / triệu)
+    :mod(n1 / nho_nhỏ)
+    :mod(n2 / nhìn
+        :frequency(đ / đôi_khi)
+        :compound(t1 / thấy)
+        :location(t3 / trời
+            :prep(t2 / trên)))
+    :modality(ấ / ấy))
+
+#::snt - những con ruồi ?
+(r / ruồi
+    :classifier(c / con)
+    :mode interrogative)
+
+#::snt - không phải , những vật nhỏ lấp lánh ấy .
+(a / and
+    :op1(p / phải
+        :polarity -)
+    :op2(v / vật
+        :mod(n1 / nhỏ)
+        :mod(l / lấp_lánh)
+        :modality(ấ / ấy)))
+
+#::snt - những con ong ?
+(o / ong
+    :classifier(c / con)
+    :mode interrogative)
+
+#::snt - không mà ...
+(k / không
+    :modality(m / mà))
+
+#::snt những vật nho nhỏ vàng óng vẫn làm cho bọn người vô tích sự chúng nó mơ màng ấy .
+(l / làm
+    :cause(v / vật
+        :mod(n1 / nho_nhỏ)
+        :mod(v1 / vàng
+            :compound(ó / óng)))
+    :manner(v2 / vẫn)
+    :patient(m / mơ_màng
+        :pivot(n2 / người
+            :classifier(b / bọn)
+            :mod(v3 / vô_tích_sự)
+            :mod(ấ / ấy))))
+
+#::snt ta , ta là một người đứng đắn !
+(n / người
+    :domain(t / ta)
+    :mod(đ / đứng_đắn))
+
+#::snt ta không có thì giờ đâu mà mơ màng .
+(c / có
+    :pivot(t / ta)
+    :theme(t1 / thì_giờ)
+    :modality(đ / đâu)
+    :purpose(m1 / mơ_màng
+        :pivot t)
+    :polarity -)
+
+#::snt - đúng rồi đấy .
+(đ / đúng
+    :modality(r / rồi)
+    :modality(đ1 / đấy))
+
+#::snt những ngôi sao .
+(s / sao
+    :classifier(n1 / ngôi))
+
+#::snt - thế ông làm gì với năm trăm triệu ngôi sao ?
+(l / làm
+    :modality(t / thế)
+    :agent(ô / ông)
+    :goal(s / sao
+        :classifier(n1 / ngôi)
+        :quant 500000000)
+    :theme(a / amr-unknown))
+
+#::snt - năm trăm linh một triệu sáu trăm năm mươi hai nghìn bảy trăm ba mươi mốt .
+(h / have-quant-91
+    :quant 501622731)
+
+#::snt Ta , ta là một người đứng đắn , ta rất chính xác !
+(a / and
+    :op1(n / người
+        :domain(t1 / ta)
+        :mod(đ / đứng_đắn))
+    :op2(c / chính_xác
+        :degree(r / rất)
+        :domain t1))
+
+#::snt - thế ông làm gì với những ngôi sao ?
+(l / làm
+    :modality(t / thế)
+    :agent(ô / ông)
+    :goal(s / sao
+        :classifier(n1 / ngôi))
+    :theme(a / amr-unknown))
+
+#::snt - ta làm gì à ?
+(l / làm
+    :agent(t / ta)
+    :modality(à / à)
+    :theme(a2 / amr-unknown))
+
+#::snt - vâng .
+(v / vâng)
+
+#::snt - chẳng làm gì sất .
+(l / làm
+    :theme(g / gì)
+    :modality(s / sất)
+    :polarity -)
+
+#::snt ta chiếm hữu chúng .
+(c / chiếm_hữu
+    :agent(t / ta)
+    :theme(c1 / chúng))
+
+#::snt - ông chiếm hữu những ngôi sao ?
+(c / chiếm_hữu
+    :agent(ô / ông)
+    :patient(s / sao
+        :classifier(n1 / ngôi))
+    :mode interrogative)
+
+#::snt - phải .
+(p / phải)
+
+#::snt - nhưng tôi biết một ông vua cũng ...
+(c1 / contrast-01
+    :ARG2(b / biết
+        :pivot(t / tôi)
+        :goal(ô / ông
+            :compound(v / vua)
+            :quant 1)
+        :modality(c / cũng)))
+
+#::snt - các ông vua không chiếm hữu gì cả .
+(c1 / chiếm_hữu
+    :agent(ô / ông
+        :compound(v / vua))
+    :theme(g / gì)
+    :degree(c2 / cả)
+    :polarity -)
+
+#::snt họ chỉ " trị vì " ở trên , thế thôi .
+(t / trị_vì
+    :agent(h / họ)
+    :degree(c / chỉ)
+    :location(t1 / trên
+        :prep(ở / ở))
+    :modality(t2 / thế
+        :compound(t3 / thôi)))
+
+#::snt rất khác nhau .
+(k / khác
+    :degree(r / rất)
+    :compared-to(n / nhau))
+
+#::snt - thế việc sở hữu những ngôi sao giúp gì cho ông ?
+(g / giúp
+    :modality(t / thế)
+    :pivot(v / việc
+        :mod(s / sở_hữu
+            :theme(s1 / sao
+                :classifier(n1 / ngôi))
+            :pivot ô))
+    :beneficiary(ô / ông)
+    :theme(a / amr-unknown))
+
+#::snt - nó giúp ta giàu .
+(g / giúp
+    :pivot(n / nó)
+    :result(g1 / giàu
+        :pivot(t / ta)))
+
+#::snt - giàu giúp ông được gì ?
+(g1 / giúp
+    :pivot(g / giàu
+        :pivot-of ô)
+    :beneficiary(đ / được
+        :beneficiary-arg0(ô / ông)
+        :theme(a / amr-unknown)))
+
+#::snt - mua những ngôi sao khác , nếu có người tìm thấy nữa .
+(m / mua
+    :theme(s / sao
+        :classifier(n1 / ngôi)
+        :mod(k / khác))
+    :condition(c / có
+        :result(t / tìm
+            :agent(n3 / người)
+            :compound(t1 / thấy)
+            :theme s)
+        :time(n4 / nữa)))
+
+#::snt cái ông này , ông hoàng nhỏ nghĩ thầm , ông ta lý sự hơi giống tay bợm nhậu của mình .
+(n2 / nghĩ
+    :agent(ô1 / ông_hoàng
+        :mod(n1 / nhỏ))
+    :compound(t / thầm)
+    :topic(l / lý_sự
+        :agent(ô / ông
+            :mod(n / này))
+        :manner(r / resemble-01
+            :degree(h / hơi)
+            :compared-to(t2 / tay
+                :compound(b / bợm
+                    :compound(n3 / nhậu))
+                :poss ô1))))
+
+#::snt tuy thế em vẫn hỏi thêm :
+(c / contrast-01
+    :ARG2(h / hỏi
+        :agent(e / em)
+        :manner(v / vẫn)
+        :compound(t1 / thêm)))
+
+#::snt - làm thế nào người ta sở hữu những ngôi sao ?
+(l / làm
+    :purpose(s / sở_hữu
+        :pivot(n / người_ta)
+        :theme(s1 / sao
+            :classifier(n2 / ngôi)))
+    :manner(a / amr-unknown)
+    :agent n)
+
+#::snt - chúng của ai nào ?
+(c / chúng
+    :modality(n / nào)
+    :poss(a / amr-unknown))
+
+#::snt nhà doanh nghiệp vặn lại , sửng cồ .
+(v / vặn
+    :agent(n / nhà
+        :compound(d / doanh_nghiệp))
+    :compound(l / lại)
+    :manner(s / sửng_cồ))
+
+#::snt - tôi không biết .
+(b / biết
+    :pivot(t / tôi)
+    :polarity -)
+
+#::snt không của ai cả .
+(c / của
+    :poss(a / ai)
+    :modality(c1 / cả)
+    :polarity -)
+
+#::snt - thế thì chúng là của ta , bởi ta nghĩ tới trước nhất .
+(c / chúng
+    :modality(t / thế_thì)
+    :poss(t1 / ta)
+    :reason(n / nghĩ
+        :time(t4 / trước_nhất)
+        :pivot t1
+        :theme c))
+
+#::snt - chỉ thế là đủ ư ?
+(đ / đủ
+    :domain(t / thế
+        :degree(c / chỉ))
+    :mode interrogative)
+
+#::snt - chắc rồi .
+(c / chắc
+    :modality(r / rồi))
+
+#::snt khi chú tìm thấy một viên kim cương không là của ai cả , thì nó là của chú .
+(k1 / kim_cương
+    :condition(t / tìm
+        :agent(c / chú)
+        :compound(t1 / thấy)
+        :theme k1
+            :poss(a / ai
+                :degree(c2 / cả)
+                :polarity -)
+            :quant 1
+                :classifier(v / viên))
+    :poss c)
+
+#::snt khi chú tìm thấy một hòn đảo không phải là của ai cả , thì hòn đảo ấy là của chú .
+(đ / đảo
+    :condition(t / tìm
+        :agent(c / chú)
+        :compound(t1 / thấy)
+        :theme t
+            :poss(a / ai
+                :degree(c2 / cả)
+                :polarity -)
+            :quant 1
+                :classifier(h / hòn))
+    :mod(ấ / ấy)
+    :poss c)
+
+#::snt và ta có được những ngôi sao kia , vì chưa hề có ai trước ta nghĩ đến việc chiếm hữu chúng .
+(a1 / and
+    :op2(c / có
+        :pivot(t / ta)
+        :theme(s / sao
+            :classifier(n1 / ngôi)
+            :mod(k / kia))
+        :cause(n2 / nghĩ
+            :pivot(c2 / có
+                :pivot-of(a / ai)
+                :time(t1 / trước
+                    :mod t)
+                :polarity -)
+            :topic(v2 / việc
+                :mod(c3 / chiếm_hữu
+                    :theme s)))))
+
+#::snt - điều này thì đúng , ông hoàng nhỏ nói .
+(n2 / nói
+    :topic(đ1 / đúng
+        :domain(đ / điều
+            :mod(n / này)))
+    :agent(ô / ông_hoàng
+        :mod(n1 / nhỏ)))
+
+#::snt ông dùng chúng để làm gì ?
+(d / dùng
+    :agent(ô / ông)
+    :theme(c / chúng)
+    :purpose(l / làm
+        :topic(a / amr-unknown)
+        :agent ô))
+
+#::snt - ta quản lý chúng .
+(q / quản_lý
+    :agent(t / ta)
+    :theme(c / chúng))
+
+#::snt ta đếm đi rồi ta đếm lại chúng , nhà doanh nghiệp nói .
+(n1 / nói
+    :agent(n / nhà
+        :compound(d / doanh_nghiệp))
+    :topic(a / and
+        :op1(đ / đếm
+            :agent(t / ta)
+            :manner(đ1 / đi)
+            :theme c)
+        :op2(đ2 / đếm
+            :manner(l / lại)
+            :theme(c / chúng)
+            :agent t)))
+
+#::snt khó đấy .
+(k / khó
+    :modality(đ / đấy))
+
+#::snt nhưng ta là một người đứng đắn !
+(c / contrast-01
+    :ARG2(n1 / người
+        :domain(t / ta)
+        :mod(đ / đứng_đắn)
+        :quant 1))
+
+#::snt ông hoàng nhỏ vẫn chưa bằng lòng :
+(b / bằng_lòng
+    :pivot(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :manner(v / vẫn)
+    :polarity -)
+
+#::snt - tôi đấy ư , nếu tôi có một chiếc khăn quàng , tôi quàng nó vào cổ và mang nó đi .
+(a / and
+    :op1(t / tôi
+        :modality(đ / đấy
+            :compound(ư / ư)))
+    :op2(a2 / and
+        :condition(c / có
+            :theme(k / khăn_quàng
+                :quant 1
+                    :classifier(c1 / chiếc))
+            :pivot t)
+        :op1(q / quàng
+            :goal(c2 / cổ
+                :prep(v / vào)
+                :part-of t)
+            :agent t
+            :patient k)
+        :op2(m1 / mang
+            :agent t
+            :patient k)))
+
+#::snt tôi , nếu tôi có một bông hoa , tôi có thể hái bông hoa đó và mang nó đi .
+(p / possible-01
+    :condition(c / có
+        :pivot(t1 / tôi)
+        :theme(h / hoa
+            :quant 1
+                :classifier(b / bông)))
+    :theme(a111 / and
+        :op1(h1 / hái
+            :patient(h2 / hoa
+                :classifier(b1 / bông)
+                :mod(đ / đó))
+            :agent t1)
+        :op2(m1 / mang
+            :patient h2
+            :agent t1)))
+
+#::snt còn ông đâu có thể hái các ngôi sao !
+(c4 / contrast-01
+    :ARG2(p / possible-01
+        :manner(h / hái
+            :agent(ô / ông)
+            :patient(s / sao
+                :classifier(n / ngôi)))
+        :polarity -))
+
+#::snt - không , nhưng ta có thể bỏ chúng vào ngân hàng .
+(c3 / contrast-01
+    :ARG1(k / không)
+    :ARG2(p / possible-01
+        :theme(b / bỏ
+            :agent(t / ta)
+            :patient(c1 / chúng)
+            :location(n1 / ngân_hàng
+                :prep(v / vào)))))
+
+#::snt - nghĩa là thế nào ?
+(n / nghĩa_là
+    :manner(a / amr-unknown))
+
+#::snt - nghĩa là ta viết trên một tờ giấy con số ngôi sao của ta .
+(n / nghĩa_là
+    :manner(v / viết
+        :agent(t / ta)
+        :location(g / giấy
+            :prep(t1 / trên)
+            :quant 1
+                :classifier(t2 / tờ))
+        :theme(c / con_số
+            :mod(s / sao
+                :classifier(n1 / ngôi)
+                :poss t))))
+
+#::snt sau đó ta khoá chặt mẩu giấy ấy trong một cái tủ .
+(k / khoá
+    :agent(t / ta)
+    :manner(c / chặt)
+    :theme(m / mẩu
+        :mod(g / giấy)
+        :mod(ấ / ấy))
+    :location(t2 / tủ
+        :prep(t1 / trong)
+        :quant 1
+            :classifier(c1 / cái)))
+
+#::snt - chỉ thế thôi à ?
+(t / thế
+    :degree(c / chỉ)
+    :modality(t1 / thôi)
+    :modality(à / à)
+    :mode interrogative)
+
+#::snt - thế đủ rồi .
+(đ / đủ
+    :domain(t / thế)
+    :modality(r / rồi))
+
+#::snt buồn cười thật , ông hoàng nhỏ nghĩ thầm .
+(n1 / nghĩ
+    :topic(b / buồn_cười
+        :modality(t / thật))
+    :pivot(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :compound(t1 / thầm))
+
+#::snt có vẻ nên thơ đấy .
+(c / có
+    :theme(v / vẻ
+        :mod(n / nên_thơ))
+    :modality(đ / đấy))
+
+#::snt nhưng mà không đứng đắn lắm đâu .
+(c / contrast-01
+    :ARG2(đ / đứng_đắn
+        :degree(l / lắm)
+        :modality(đ1 / đâu)
+        :polarity -))
+
+#::snt ông hoàng nhỏ nghĩ về việc đứng đắn rất khác với những người lớn .
+(n1 / nghĩ
+    :pivot(ô / ông_hoàng
+        :mod(n / nhỏ))
+    :topic(v1 / việc
+        :mod(đ / đứng_đắn))
+    :manner(k / khác
+        :degree(r / rất)
+        :compared-to(n3 / người_lớn)))
+
+#::snt - tôi , em lại nói , tôi có một bông hoa mà hôm nào cũng tưới .
+(n / nói
+    :agent(e / em)
+    :manner(l / lại)
+    :topic(c / có
+        :theme(h / hoa
+            :theme-of(t2 / tưới
+                :modality(c1 / cũng)
+                :agent e
+                :patient h
+                :frequency(r / rate-entity-91
+                    :time(t3 / temporal-quantity
+                        :unit(h1 / hôm
+                            :mod(n1 / nào)))))
+            :quant 1
+                :classifier(b / bông))
+        :pivot e))
+
+#::snt tôi có ba quả núi lửa mà tuần nào tôi cũng nạo vét .
+(c / có
+    :pivot(t / tôi)
+    :theme(n / núi_lửa
+        :theme-of(n2 / nạo_vét
+            :modality(c1 / cũng)
+            :frequency(r / rate-entity-91
+                :time(t4 / temporal-quantity
+                    :unit(t1 / tuần
+                        :mod(n1 / nào))))
+            :agent t)
+        :quant 3
+            :classifier(q / quả)))
+
+#::snt tôi cũng nạo vét cả quả núi lửa đã tắt .
+(n / nạo_vét
+    :agent(t / tôi)
+    :modality(c / cũng)
+    :patient(n1 / núi_lửa
+        :classifier(q / quả)
+        :patient-of(t1 / tắt
+            :tense(đ / đã))))
+
+#::snt biết đâu đấy !
+(b / biết_đâu_đấy
+    :mode interrogative)
+
+#::snt cái đó giúp ích cho các quả núi lửa , và giúp ích cho bông hoa của tôi , nên tôi có chúng .
+(c5 / có
+    :pivot(t1 / tôi)
+    :reason(a / and
+        :op1(g / giúp_ích
+            :theme(c / cái
+                :mod(đ / đó))
+            :beneficiary(n / núi_lửa
+                :classifier(q / quả))
+        :op2(g1 / giúp_ích
+            :beneficiary(h / hoa
+                :classifier(b / bông)
+                :poss(t / tôi))
+            :theme c)))
+    :theme c)
+
+#::snt nhưng ông chẳng giúp ích gì cho những ngôi sao cả ...
+(c3 / contrast-01
+    :ARG2(g / giúp_ích
+        :agent(ô / ông)
+        :polarity -
+        :theme(g1 / gì)
+        :goal(s / sao
+            :classifier(n2 / ngôi))))
+
+#::snt nhà doanh nghiệp mở miệng nhưng chẳng biết trả lời ra sao cả , và ông hoàng nhỏ ra đi .
+(a / and
+    :op2(r1 / ra
+        :agent(ô / ông_hoàng
+            :mod(n2 / nhỏ))
+        :compound(đ / đi))
+    :op1(c3 / contrast-01
+        :ARG1(m / mở_miệng
+            :agent(n / nhà
+                :compound(d / doanh_nghiệp)))
+        :ARG2(b / biết
+            :topic(t / trả_lời
+                :manner(r / ra
+                    :compound(s / sao)
+                    :degree(c1 / cả)))
+            :polarity -
+            :agent n)))
+
+#::snt những người lớn nhất định là những người hoàn toàn kỳ quái .
+(n4 / người
+    :domain(n1 / người_lớn)
+    :degree(n2 / nhất_định)
+    :mod(k / kỳ_quái
+        :degree(h / hoàn_toàn)))
+
+#::snt em nghĩ thầm một cách đơn giản như vậy trong suốt cuộc hành trình .
+(n / nghĩ
+    :pivot(e / em)
+    :compound(t / thầm)
+    :manner(m / một_cách
+        :mod(đ / đơn_giản
+            :compared-to(v / vậy)
+            :degree(e2 / e2)))
+    :setting(c / cuộc
+        :prep(t1 / trong)
+        :time(s / suốt)
+        :mod(h / hành_trình)))
+
+#::snt hành tinh thứ năm rất lạ .
+(l / lạ
+    :domain(h / hành_tinh
+        :ord(o / ordinal-entity
+            :value 5))
+    :degree(r / rất))
+
+#::snt nó là cái bé nhất trong số các hành tinh .
+(c / cái
+    :domain(n / nó)
+    :mod(b / bé
+        :degree(n1 / nhất)
+        :compared-to(s / số
+            :prep(t / trong)
+            :mod(h / hành_tinh))))
+
+#::snt ở đấy chỉ đủ chỗ cho một cây cột đèn và một người thắp đèn .
+(đ1 / đủ
+    :mod(c / chỉ)
+    :location(c1 / chỗ)
+    :goal(a / and
+        :theme(c4 / cột
+            :compound(đ2 / đèn)
+            :quant 1
+                :classifier(c3 / cây))
+        :op2(p / person
+            :agent-of(t / thắp
+                :patient(đ3 / đèn))
+            :quant 1)))
+
+#::snt ông hoàng nhỏ nghĩ mãi nhưng không thể nào hiểu được tại sao , đâu đó trong bầu trời , trên một hành tinh không nhà cửa , không dân cư , lại có một cây cột đèn và một người thắp đèn để làm chi .
+(c7 / contrast-01
+    :ARG1(n1 / nghĩ
+        :pivot(ô / ông_hoàng
+            :mod(n / nhỏ))
+        :manner(m / mãi))
+    :ARG2(p / possible-01
+        :pivot(h / hiểu
+            :manner(đ / được)
+            :cause(a / amr-unknown
+                :result(c / có
+                    :manner(l / lại)
+                    :purpose(l1 / làm_chi)
+                    :theme(a2 / and
+                        :op1(c2 / cột
+                            :compound(đ2 / đèn)
+                            :quant 1
+                                :classifier(c1 / cây))
+                        :op2(p2 / person
+                            :agent-of(t3 / thắp
+                                :patient(đ3 / đèn))
+                            :quant 1))
+                    :location(r / relative-position
+                        :op1(b / bầu_trời
+                            :prep(t1 / trong))
+                        :op2(h1 / hành_tinh
+                            :prep(t2 / trên)
+                            :mod(a3 / and
+                                :op1(n4 / nhà_cửa
+                                    :polarity -)
+                                :op2(d / dân_cư
+                                    :polarity -))
+                            :quant 1))))
+            :pivot ô)
+        :polarity -))
+
+#::snt tuy vậy em tự bảo :
+(c / contrast-01
+    :ARG2(t1 / tự
+        :pivot(e / em)
+        :compound(b / bảo)))
+
+#::snt - rất có thể người này là vô lý .
+(p / possible-01
+    :degree(r / rất)
+    :theme(v / vô_lý
+        :domain(n / người
+            :mod(n1 / này))))
+
+#::snt tuy thế ông ta còn ít vô lý hơn ông vua , ít vô lý hơn kẻ khoác lác , ít vô lý hơn nhà doanh nghiệp , ít vô lý hơn tay bợm nhậu .
+(c2 / contrast-01
+    :ARG2(v / vô_lý
+        :domain(ô / ông
+            :mod(t2 / ta))
+        :modality(c / còn)
+        :degree(í / ít)
+        :degree(h / hơn)
+        :compared-to(a / and
+            :op1(ô1 / ông
+                :compound(v1 / vua))
+            :op2(k / kẻ
+                :mod(k1 / khoác_lác))
+            :op3(n / nhà
+                :compound(d / doanh_nghiệp))
+            :op4(t3 / tay
+                :mod(b / bợm
+                    :compound(n1 / nhậu))))))
+
+#::snt ít ra công việc ông ta làm còn có một ý nghĩa .
+(c2 / có
+    :modality(í / ít_ra)
+    :topic(c / công_việc
+        :mod(l / làm
+            :agent(ô / ông
+                :mod(t / ta))))
+    :modality(c1 / còn)
+    :result(ý / ý_nghĩa))
+
+#::snt khi ông ta thắp cây đèn của mình , như là ông ta sinh thêm một ngôi sao hay một bông hoa .
+(r / resemble-01
+    :time(t1 / thắp
+        :agent(ô / ông
+            :mod(t / ta))
+        :patient(đ / đèn
+            :classifier(c / cây)
+            :poss ô))
+    :compared-to(s / sinh
+        :compound(t3 / thêm)
+        :result(o / or
+            :op1(s1 / sao
+                :quant 1
+                    :classifier(n1 / ngôi))
+            :op2(h1 / hoa
+                :quant 1
+                    :classifier(b / bông)))
+        :agent ô)
+    :degree(e / equal))
+
+#::snt khi ông ta tắt cây đèn , ông ta ru bông hoa hay ngôi sao ấy ngủ .
+(r / ru
+    :time(t1 / tắt
+        :agent(ô / ông
+            :mod(t / ta))
+        :patient(đ / đèn
+            :classifier(c / cây)))
+    :purpose(n1 / ngủ
+        :agent o)
+    :theme(o / or
+        :op1(h / hoa
+            :classifier(b / bông))
+        :op2(s / sao
+            :classifier(n / ngôi)
+            :mod(ấ / ấy)))
+    :agent ô)
+
+#::snt ấy là một công việc rất đẹp chứ .
+(c / công_việc
+    :domain(ấ / ấy)
+    :mod(đ / đẹp
+        :degree(r / rất)))
+
+#::snt việc ấy mới thật sự là có ích là vì nó đẹp .
+(c / có_ích
+    :domain(v / việc
+        :mod(ấ / ấy))
+    :degree(t / thật_sự)
+    :reason(đ / đẹp
+        :domain v))
+
+#::snt khi đến gần tinh cầu , em kính trọng chào người thắp đèn :
+(c / chào
+    :time(đ / đến
+        :degree(g / gần)
+        :location(t / tinh_cầu)
+        :agent e)
+    :agent(e / em)
+    :manner(k1 / kính_trọng)
+    :goal(n / người
+        :agent-of(t1 / thắp
+            :patient(đ1 / đèn))))
+
+#::snt chúc một ngày tốt lành .
+(c / chúc
+    :topic(n / ngày
+        :mod(t / tốt_lành)
+        :quant 1))
+
+#::snt tại sao ông tắt đèn đi ?
+(t1 / tắt
+    :agent(ô / ông)
+    :patient(đ / đèn)
+    :manner(đ1 / đi)
+    :reason(a / amr-unknown))
+
+#::snt - đó là điều lệnh , người thắp đèn trả lời .
+(t1 / trả_lời
+    :topic(đ1 / điều_lệnh
+        :domain(đ / đó))
+    :agent(n / người
+        :agent-of(t / thắp
+            :patient(đ2 / đèn))))
+
+#::snt chúc một ngày tốt lành .
+(c / chúc
+    :topic(n / ngày
+        :mod(t / tốt_lành)
+        :quant 1))
+
+#::snt - điều lệnh gì vậy ?
+(đ / điều_lệnh
+    :domain(a / amr-unknown))
+
+#::snt - là tắt đèn đi .
+(t / tắt
+    :patient(đ / đèn)
+    :mode imperative)
+
+#::snt chúc một buổi tối tốt lành .
+(c / chúc
+    :topic(b / buổi
+        :compound(t / tối)
+        :mod(t1 / tốt_lành)
+        :quant 1))
+
+#::snt và ông ta lại thắp đèn lên .
+(a / and
+    :op2(t1 / thắp
+        :agent(ô / ông
+            :mod(t / ta))
+        :manner(l / lại)
+        :patient(đ / đèn)
+        :manner(l1 / lên)))
+
+#::snt - nhưng tại sao ông lại vừa thắp đèn lên ?
+(c / contrast-01
+    :ARG2(t1 / thắp
+        :agent(ô / ông)
+        :manner(l / lại)
+        :patient(đ / đèn)
+        :manner(l1 / lên)
+        :cause(a / amr-unknown)))
+
+#::snt - điều lệnh mà , người thắp đèn trả lời .
+(t1 / trả_lời
+    :topic(đ / điều_lệnh
+        :modality(m / mà))
+    :agent(n / người
+        :agent-of(t / thắp
+            :patient(đ1 / đèn))))
+
+#::snt - tôi không hiểu , ông hoàng nhỏ nói .
+(n1 / nói
+    :topic(h / hiểu
+        :polarity -
+        :pivot ô)
+    :agent(ô / ông_hoàng
+        :mod(n / nhỏ)))
+
+#::snt - chẳng có gì mà hiểu cả , người thắp đèn nói .
+(n1 / nói
+    :topic(c1 / có
+        :theme(g / gì)
+        :degree(m / mà)
+        :purpose(h / hiểu)
+        :polarity -)
+    :agent(n / người
+        :agent-of(t / thắp
+            :patient(đ / đèn))))
+
+#::snt điều lệnh là điều lệnh .
+(đ1 / điều_lệnh
+    :domain(đ / điều_lệnh))
+
+#::snt chúc một ngày tốt lành .
+(c / chúc
+    :topic(n / ngày
+        :mod(t / tốt_lành)
+        :quant 1))
+
+#::snt rồi ông ta tắt cây đèn .
+(a / and
+    :op2(t1 / tắt
+        :agent(ô / ông
+            :mod(t / ta))
+        :patient(đ / đèn
+            :classifier(c / cây))))
+
+#::snt và ông ta thấm mồ hôi trên trán bằng một chiếc mùi soa ca rô đỏ .
+(a / and
+    :op2(t1 / thấm
+        :agent(ô / ông
+            :mod(t / ta))
+        :theme(m / mồ_hôi
+            :source(t3 / trán
+                :prep(t2 / trên)
+                :part-of ô))
+        :instrument(m2 / mùi_soa
+            :mod(c1 / ca_rô)
+            :mod(đ / đỏ)
+            :quant 1
+                :classifier(c / chiếc))))
+
+#::snt - nghề của ta làm đây thật kinh khủng .
+(k / kinh_khủng
+    :domain(n / nghề
+        :mod(l / làm
+            :agent(t / ta)
+            :location(đ / đây)))
+    :degree(t1 / thật))
+
+#::snt xưa kia thì nó còn có lý .
+(c1 / có_lý
+    :time(x / xưa
+        :compound(k / kia))
+    :domain(n / nó)
+    :modality(c / còn))
+
+#::snt sáng ta tắt , tối ta thắp .
+(a / and
+    :op1(t1 / tắt
+        :agent(t / ta)
+        :time(d / date-entity
+            :dayperiod(s / sáng)))
+    :op2(t4 / thắp
+        :time(d2 / date-entity
+            :dayperiod(t2 / tối))
+        :agent t))
+
+#::snt phần còn lại ta nghỉ , phần đêm còn lại ta ngủ ...
+(a / and
+    :op1(c / còn
+        :theme(p / phần)
+        :compound(l / lại)
+        :purpose(n / nghỉ
+            :pivot(t / ta)))
+    :op2(c1 / còn
+        :theme(p1 / phần
+            :part-of(đ / đêm))
+        :compound(l1 / lại)
+        :purpose(n1 / ngủ
+            :pivot t)))
+
+#::snt - nhưng sau đó điều lệnh thay đổi sao ?
+(c / contrast-01
+    :ARG2(t / thay_đổi
+        :time(s / sau
+            :mod(đ / đó))
+        :theme(đ1 / điều_lệnh)
+        :mode interrogative))
+
+#::snt - điều lệnh không thay đổi , người thắp đèn nói .
+(n1 / nói
+    :topic(t / thay_đổi
+        :theme(đ / điều_lệnh)
+        :polarity -)
+    :agent(n / người
+        :agent-of(t1 / thắp
+            :patient(đ1 / đèn))))
